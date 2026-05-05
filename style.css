@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  overflow: hidden;
+}
+
+canvas {
+  width: 100vw;
+  height: 100vh;
+  display: block;
+}
+#musicBtn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 16px 28px; /* más grande */
+  border-radius: 16px;
+  background: linear-gradient(135deg, #ff8ad4, #ff4fbf);
+  color: white;
+  border: none;
+  font-size: 18px; /* más grande */
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 0 18px rgba(255, 100, 200, 0.7);
+  transition: 0.25s ease;
+  backdrop-filter: blur(6px);
+  z-index: 999999;
+}
+
+#musicBtn:hover {
+  transform: scale(1.10);
+  box-shadow: 0 0 26px rgba(255, 120, 220, 1);
+}
+
+/* --- RESPONSIVO PARA MÓVIL --- */
+@media (max-width: 600px) {
+  #musicBtn {
+    padding: 20px 32px; /* aún más grande en móvil */
+    font-size: 20px;
+    top: 15px;
+    right: 15px;
+    border-radius: 20px;
+  }
+}
